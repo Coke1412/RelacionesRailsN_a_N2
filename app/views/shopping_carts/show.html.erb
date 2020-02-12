@@ -1,0 +1,14 @@
+<h1>ShoppingCarts#show</h1>
+<p>Find me in app/views/shopping_carts/show.html.erb</p>
+
+<% @cart.each do |order| %>
+    <%= order.product.name %>
+    <%= order.product.price %>
+    <br>
+<% end  %>
+
+
+Total:
+
+<%= @total %>
+
